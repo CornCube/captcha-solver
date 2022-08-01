@@ -18,3 +18,9 @@ to solve, the program follows the following steps:
 3. takes a screenshot of the entire image grid and runs yolov5 on it
 4. presses on tiles that contain the corresponding object
 5. takes another screenshot if the challenge calls for multiple runs, or hits verify if not.
+
+### Limitations
+- model is not always accurate, leading to incorrect tile presses
+- couldn't figure out an algorithm to press all tiles that contain a bounding box in types 1 and 2
+- captchas get progressively harder to solve as failed attempts accumulate on the ip
+- the COCO dataset doesn't contain a couple of objects that captchas may ask about, mountains and hills for example
