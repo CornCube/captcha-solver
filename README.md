@@ -23,4 +23,4 @@ to solve, the program follows the following steps:
 - model is not always accurate, leading to incorrect tile presses
 - couldn't figure out an algorithm to press all tiles that contain a bounding box in types 1 and 2
 - captchas get progressively harder to solve as failed attempts accumulate on the ip
-- the COCO dataset doesn't contain a couple of objects that captchas may ask about, mountains and hills for example
+- the COCO dataset doesn't contain a couple of objects that captchas may ask about - mountains, hills, and crosswalks for example
