@@ -17,11 +17,12 @@ solve = Solve()
 options = webdriver.ChromeOptions()
 options.add_argument('--disable-blink-features=AutomationControlled')
 options.add_argument("window-size=800,600")
-proxy_list = ['PRINDCP03:8080', 'SECNDCP03:8080', 'proxy.imcc.com:8080']
-proxy = random.choice(proxy_list)
-print(proxy)
-options.add_argument('--proxy-server=%s' % proxy)
-options.add_argument("user-data-dir=" + os.getcwd() + "//selenium")
+
+# proxy_list = ['PRINDCP03:8080', 'SECNDCP03:8080', 'proxy.imcc.com:8080']
+# proxy = random.choice(proxy_list)
+# print(proxy)
+# options.add_argument('--proxy-server=%s' % proxy)
+# options.add_argument("user-data-dir=" + os.getcwd() + "//selenium")
 
 options.add_argument("user-agent=Mozilla/5.0 (Windows Phone 10.0; Android 4.2.1; Microsoft; Lumia 640 XL LTE) "
                      "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Mobile Safari/537.36 "
@@ -55,10 +56,6 @@ def check_exists_by_xpath(xpath):
 
 driver.get("https://www.google.com/recaptcha/api2/demo")
 
-
-# driver.switch_to.window(driver.window_handles[-1])
-# driver.close()
-# driver.switch_to.window(driver.window_handles[0])
 
 def main():
     # switch to recaptcha frame
